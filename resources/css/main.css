@@ -1,0 +1,335 @@
+
+
+body  {
+margin: 0 auto;
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+letter-spacing: 2px;
+background-color: #FFFFFF;
+/* border: 1rem solid white; */
+}
+
+* {
+  box-sizing: border-box;
+}
+/* div, section, header {
+    border: 1px dotted lightgray;
+} */
+
+
+
+
+
+/* ------   utility  ------ */
+
+.col {
+  min-width: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+
+.max_width  {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+
+
+.text_center  {
+  text-align: center;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.text_white {
+  color: white;
+}
+
+
+
+.flex {
+  display: flex;
+}
+
+.justify_between  {
+  justify-content: space-between;
+}
+
+.justify_around {
+  justify-content: space-around;
+}
+
+.justify_center {
+  justify-content: center;
+}
+
+
+.justify_end  {
+  justify-content: flex-end;
+}
+.column {
+  flex-direction: column;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.align_end  {
+  align-items: flex-end;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section_padding  {
+  padding: 4rem;
+}
+
+h1  {
+  font-size: 40px;
+  text-transform: capitalize;
+  text
+
+}
+
+
+
+/* ------   header  ------ */
+
+/* header  {
+  background-image: url(../../resources/images/main.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10px;
+} */
+
+/*------  header  ------*/
+
+header  {
+  background-image: url(../../resources/images/beach-beverage.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  border: 2px solid white;
+}
+
+header  span  {
+  font-size: 1.2rem;
+}
+
+li    {
+  display: inline;
+  font-size: 1.2rem;
+}
+
+
+.menu {
+  display: none;
+}
+header  i:hover {
+  color: firebrick;
+}
+
+@media only screen and (max-width: 767px) {
+  /* header  i  {
+      display: flex!important;
+    color: white  ;
+    margin: 4px;
+  } */
+
+  .menu {
+    display: flex;
+  }
+  header  ul  {
+    display: none!important ;
+  }
+  .menu span  {
+    margin-left: 9px;
+
+    background: none;
+  }
+}
+
+header  li a {
+  color: white;
+  padding: 7px;
+}
+
+header  a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+header  li  a:hover {
+  transition: all 0.4s ease;
+  border-bottom: 1px solid white;
+}
+
+
+/* header  a:hover {
+
+  color: blue;
+  padding: 3px;
+}
+
+header li:hover {
+  color: blue;
+  border-radius: 2px;
+  background-color: white;
+} */
+
+h1  {
+  font-size: 70px;
+  text-transform: capitalize;
+  text-shadow: 1.5px 1.5px darkgray;
+
+}
+
+h2  {
+  text-transform: uppercase;
+  color: white;
+  padding: 4px;
+  border-radius: 2px;
+  /* text-shadow: 2px 2px darkgray; */
+  font-size: 25px;
+}
+
+/*------  main  ------*/
+
+.box  {
+  background-color: gray;
+  height: 350px;
+    border: 2px solid white;
+
+}
+.background {
+  background: rgb(153, 153, 153, 0.6);
+  padding: 5px;
+  width:100%;
+  height: 140px;
+}
+
+.vertical {
+  background-image: url(../../resources/images/woman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hori {
+  background-image: url(../../resources/images/greek-salad.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box1 {
+  background-image: url(../../resources/images/lounger.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box2 {
+  background-image: url(../../resources/images/stairs.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box3 {
+  background-image: url(../../resources/images/kitchen.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box4 {
+  background-image: url(../../resources/images/mojito.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box_blog {
+  background-color: #404448;
+}
+
+
+@media only screen and (min-width: 767px) {
+  .main_container  {
+    display: flex;
+  }
+  .vertical {
+    height: 700px;
+    min-width: 33.3333%;
+  }
+
+
+
+  .box  {
+    /* width: 350px; */
+    /* max-width: 350px; */
+  }
+
+  .container2 {
+    width: 66.6666666%;
+  }
+  .hori {
+    color: red;
+    width: 100%!important;
+
+  }
+
+  .container3 {
+    display: flex;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+    .container_bottom  {
+      display: flex;
+
+    }
+    .container_bottom .box  {
+      height: 300px;
+      width: 33.3333%;
+    }
+}
+footer  {
+  height: 200px;
+  padding: 10px;
+}
+
+footer  i {
+  margin: 5px;
+}
+
+footer  span  {
+  font-size: 15px;
+}
+
+footer  a {
+  color: #404448;
+}
+
+@media only screen and (max-width: 767px) {
+  footer h3 {
+      font-size: 20px;
+  }
+  .benspec  {
+    text-align: right;
+    font-size: 10px;
+  }
+  footer  {
+    justify-content: space-between;
+  }
+}
